@@ -35,7 +35,15 @@ function App() {
             className="p-2 bg-blue-500 text-white rounded-md"
           />
         </div>
-        
+            <div className="flex justify-between items-center">
+          <h1 className="text-2xl font-bold mt-8 mb-4">Excel Data Management</h1>
+          <input
+            type="file"
+            accept=".xlsx, .xls"
+            onChange={handleFileUpload}
+            className="p-2 bg-blue-500 text-white rounded-md"
+          />
+        </div>
         {data.length > 0 && (
           <table className="table-auto w-full bg-white shadow-md rounded-lg overflow-hidden mt-4">
             <thead className="bg-gray-800 text-white">
